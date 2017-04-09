@@ -9,3 +9,7 @@ ones = DVBScrambler(ones);
 random = DVBScrambler(random);
 %Analiza
 Analizator(zeros, ones, random);
+% Descramblowanie
+zeros = DVBScrambler(zeros);
+ones = DVBScrambler(ones);
+random = DVBScrambler(random);

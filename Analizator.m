@@ -14,14 +14,17 @@ for i=1:n-1
 end
 i = n;
 while(1)
-   if quantity(i) ~= 0
+   if i == 1 || quantity(i) ~= 0 
        break;
    end
    quantity(i) = [];
    i = i-1;
 end
+avg = Average(quantity, n);
+disp('Zeros: ');
+disp(avg);
 subplot(311)
-plot(quantity);
+bar(quantity);
 n = size(vector2,2);
 tmp = 1;
 quantity = zeros(1,size(vector2,2));
@@ -37,14 +40,17 @@ for i=1:n-1
 end
 i = n;
 while(1)
-   if quantity(i) ~= 0
+   if i == 1 || quantity(i) ~= 0 
        break;
    end
    quantity(i) = [];
    i = i-1;
 end
+avg = Average(quantity, n);
+disp('Ones: ');
+disp(avg);
 subplot(312)
-plot(quantity);
+bar(quantity);
 n = size(vector3,2);
 tmp = 1;
 quantity = zeros(1,size(vector3,2));
@@ -60,13 +66,16 @@ for i=1:n-1
 end
 i = n;
 while(1)
-   if quantity(i) ~= 0
+   if i == 1 || quantity(i) ~= 0 
        break;
    end
    quantity(i) = [];
    i = i-1;
 end
+avg = Average(quantity, n);
+disp('Random: ');
+disp(avg);
 subplot(313)
-plot(quantity);
+bar(quantity);
 end
 
