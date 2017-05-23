@@ -58,15 +58,15 @@ end
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synZerosDVB,2)-size(ss,2))
     if (synZerosDVB(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synZerosDVB(i:i+k-1) == gestapoZeros)
+    if (synZerosDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synZerosDVB(i:i+k-1) == gestapoOnes)
+    elseif(synZerosDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -76,9 +76,9 @@ for i=1:(size(synZerosDVB,2)-size(ss,2))
     end
 end
 for i = size(synZerosDVB,2)-size(ss,2): size(synZerosDVB,2)-k-1
-    if (synZerosDVB(i:i+k-1) == gestapoZeros)
+    if (synZerosDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synZerosDVB(i:i+k-1) == gestapoOnes)
+    elseif(synZerosDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -105,15 +105,15 @@ disp(A);
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synOnesDVB,2)-size(ss,2))
     if (synOnesDVB(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synOnesDVB(i:i+k-1) == gestapoZeros)
+    if (synOnesDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synOnesDVB(i:i+k-1) == gestapoOnes)
+    elseif(synOnesDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -123,9 +123,9 @@ for i=1:(size(synOnesDVB,2)-size(ss,2))
     end
 end
 for i = size(synOnesDVB,2)-size(ss,2): size(synOnesDVB,2)-k-1
-    if (synOnesDVB(i:i+k-1) == gestapoZeros)
+    if (synOnesDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synOnesDVB(i:i+k-1) == gestapoOnes)
+    elseif(synOnesDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -152,15 +152,15 @@ disp(A);
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synRandDVB,2)-size(ss,2))
     if (synRandDVB(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synRandDVB(i:i+k-1) == gestapoZeros)
+    if (synRandDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synRandDVB(i:i+k-1) == gestapoOnes)
+    elseif(synRandDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -170,9 +170,9 @@ for i=1:(size(synRandDVB,2)-size(ss,2))
     end
 end
 for i = size(synRandDVB,2)-size(ss,2): size(synRandDVB,2)-k-1
-    if (synRandDVB(i:i+k-1) == gestapoZeros)
+    if (synRandDVB(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synRandDVB(i:i+k-1) == gestapoOnes)
+    elseif(synRandDVB(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -199,15 +199,15 @@ disp(A);
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synZerosV34,2)-size(ss,2))
     if (synZerosV34(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synZerosV34(i:i+k-1) == gestapoZeros)
+    if (synZerosV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synZerosV34(i:i+k-1) == gestapoOnes)
+    elseif(synZerosV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -217,9 +217,9 @@ for i=1:(size(synZerosV34,2)-size(ss,2))
     end
 end
 for i = size(synZerosV34,2)-size(ss,2): size(synZerosV34,2)-k-1
-    if (synZerosV34(i:i+k-1) == gestapoZeros)
+    if (synZerosV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synZerosV34(i:i+k-1) == gestapoOnes)
+    elseif(synZerosV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -246,15 +246,15 @@ disp(A);
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synOnesV34,2)-size(ss,2))
     if (synOnesV34(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synOnesV34(i:i+k-1) == gestapoZeros)
+    if (synOnesV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synOnesV34(i:i+k-1) == gestapoOnes)
+    elseif(synOnesV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -264,9 +264,9 @@ for i=1:(size(synOnesV34,2)-size(ss,2))
     end
 end
 for i = size(synOnesV34,2)-size(ss,2): size(synOnesV34,2)-k-1
-    if (synOnesV34(i:i+k-1) == gestapoZeros)
+    if (synOnesV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synOnesV34(i:i+k-1) == gestapoOnes)
+    elseif(synOnesV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -293,15 +293,15 @@ disp(A);
 dobrze = 0;
 zle = 0;
 synchronized = false;
-gestapoZeros = zeroGenerator(k);
-gestapoOnes = onesGenerator(k);
+VZeros = zeroGenerator(k);
+VOnes = onesGenerator(k);
 for i=1:(size(synRandV34,2)-size(ss,2))
     if (synRandV34(i:i+size(ss,2)-1) == ss)
         synchronized = true;
     end
-    if (synRandV34(i:i+k-1) == gestapoZeros)
+    if (synRandV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synRandV34(i:i+k-1) == gestapoOnes)
+    elseif(synRandV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
@@ -311,9 +311,9 @@ for i=1:(size(synRandV34,2)-size(ss,2))
     end
 end
 for i = size(synRandV34,2)-size(ss,2): size(synRandV34,2)-k-1
-    if (synRandV34(i:i+k-1) == gestapoZeros)
+    if (synRandV34(i:i+k-1) == VZeros)
         synchronized = false;
-    elseif(synRandV34(i:i+k-1) == gestapoOnes)
+    elseif(synRandV34(i:i+k-1) == VOnes)
         synchronized = false;
     end
     if (synchronized == true)
